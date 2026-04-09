@@ -15,28 +15,7 @@ const ALARM_URL = new URL("./assets/alarme.mp3", import.meta.url).href;
 const PRESET_BACKDROPS = [
   {
     label: "Study Session",
-    url: new URL("./assets/mylivewallpapers.com-Study-Session.mp4", import.meta.url).href,
-  },
-  {
-    label: "Mutsumi",
-    url: new URL(
-      "./assets/mutsumi-wakaba-ave-mujica-bang-dream-moewalls-com.mp4",
-      import.meta.url,
-    ).href,
-  },
-  {
-    label: "Anime Rain",
-    url: new URL(
-      "./assets/lofi-anime-girl-watching-the-rain-with-cat-moewalls-com.mp4",
-      import.meta.url,
-    ).href,
-  },
-  {
-    label: "Starry Train",
-    url: new URL(
-      "./assets/ichika-hoshino-starry-train-ride-project-sekai-moewalls-com.mp4",
-      import.meta.url,
-    ).href,
+    url: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2dnaDQ1NDR4dGF0MjNlMW5ubzhiYjZwbDlud3Vhbm80eDV4ZXlkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif",
   },
 ];
 
