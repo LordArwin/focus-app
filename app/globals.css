@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070b14;
+  --foreground: #f5f7fb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.35);
+  color: white;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate3d(-1.5%, 1%, 0) scale(1.03);
+  }
+
+  66% {
+    transform: translate3d(1.5%, -1%, 0) scale(1.02);
+  }
+}
+
+.animate-drift {
+  animation: drift 18s ease-in-out infinite;
+}
